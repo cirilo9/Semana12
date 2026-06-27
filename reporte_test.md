@@ -1,13 +1,13 @@
 # REPORT DE PRUEBAS UNITARIAS: SISTEMA DE RESERVAS "HOTEL PARAÍSO"
 
 ## I. INFORMACIÓN GENERAL
-* **Institución:** Instituto de Educación Superior Tecnológico Público "Santiago Antúnez de Mayolo" 
+
 * **Programa de Estudio:** Diseño y Programación Web 
 * **Unidad Didáctica:** Pruebas Unitarias de Software 
 * **Semana de Práctica:** 12 
 * **Docente:** Ing. Erick Donniex Moscoso Bravo
-* **Estudiante:** Hinostroza Tello Cirilo 
-* **Enlace del Repositorio:** [Coloca aquí la URL de tu GitHub] 
+* **Estudiante:** cirilo9
+* **Enlace del Repositorio:**(https://github.com/cirilo9/Semana12.git) 
 
 ---
 
@@ -35,7 +35,7 @@ A continuación, se detallan los 10 puntos críticos identificados por el Tech L
 
 
 
-## IV. RESULTADOS DE LA EJECUCIÓN (EVIDENCIA `--testdox`)
+## IV. RESULTADOS DE LA EJECUCIÓN (Para ejecutar las pruebas por terminal `vendor/bin/phpunit --testdox`)
 Se ejecutó la suite de pruebas unitarias automatizadas utilizando la opción `--testdox` de PHPUnit, la cual traduce los resultados técnicos a un lenguaje natural legible para la gerencia y el equipo de desarrollo.
 
 A continuación, se transcribe el resultado exitoso obtenido desde la consola del sistema:
