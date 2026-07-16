@@ -22,55 +22,35 @@ Se implementó una suite completa de pruebas automatizadas utilizando **PHPUnit 
 
 El proyecto sigue el estándar de la comunidad PHP con auto-cargado PSR-4:
 
+Este es el contenido actualizado para tu archivo de la raíz del proyecto. Documenta la integración completa de la Semana 12 (Hotel) y la Semana 15 (Aserciones en PHPUnit):  Markdown# Proyecto de Calidad y Pruebas Unitarias - SEMANA 12 & 15
+
+Este repositorio contiene la suite de pruebas automatizadas en PHP utilizando la biblioteca **PHPUnit**, enfocándose tanto en la lógica de negocio de un Sistema de Reservas de Hotel como en la implementación de aserciones de objetos avanzadas con PSR-4.
+
+## Estructura de Directorios Actualizada
+
+El proyecto sigue el estándar de la comunidad PHP con auto-cargado PSR-4:
+
 ```text
 semana12/
 ├── composer.json          # Dependencias y configuración de auto-carga
 ├── phpunit.xml            # Configuración global de la suite de pruebas
-├── README.md              # Documentación principal del proyecto
+├── README.md              # Documentación principal del proyecto (Actualizado)
 ├── reporte_test.md        # Informe detallado de QA para gerencia
 ├── src/                   # Código de producción (Lógica de negocio)
 │   ├── Cliente.php
 │   ├── Habitacion.php
-│   └── Reserva.php
+│   ├── Reserva.php
+│   └── Usuario.php        # INTEGRADO S15: Clase de negocio Usuario
 └── tests/                 # Suite de pruebas unitarias automatizadas
     ├── ClienteTest.php
     ├── HabitacionTest.php
-    └── ReservaTest.php
-
-Requisitos Previos
-Asegúrate de contar con las siguientes herramientas instaladas en tu entorno local:
-
-PHP 8.4 o superior.
-
-Composer (Gestor de dependencias de PHP).
-
- Instalación y Configuración
-Clonar el repositorio u organizar los archivos en tu directorio local:
-
-Bash
-cd "C:\Users\Hp\Documents\SEMANA 12 PUS"
-Instalar las dependencias de desarrollo (PHPUnit):
-
-Bash
-composer install
-Generar/Actualizar el optimizador de carga automática (opcional si hay cambios):
-
-Bash
-composer dump-autoload
- Ejecución de las Pruebas Unitarias
-Para correr las pruebas unitarias y verificar la calidad del código implementado, ejecuta el motor de PHPUnit en tu terminal.
-
-Comando estándar:
-Bash
-vendor/bin/phpunit
-Comando con Reporte Detallado (--testdox):
-Este comando traduce las pruebas a un formato estructurado en lenguaje natural:
-
-Bash
-vendor/bin/phpunit --testdox
-Resultado Esperado en Consola:
-Plaintext
-PHPUnit 11.5.55 by Sebastian Bergmann and contributors.
+    ├── ReservaTest.php
+    └── UsuarioTest.php    # INTEGRADO S15: Set de 23 pruebas de aserciones avanzadas
+Requisitos PreviosAsegúrate de contar con las siguientes herramientas instaladas en tu entorno local:PHP 8.4 o superior.Composer (Gestor de dependencias de PHP).Instalación y ConfiguraciónClonar el repositorio u organizar los archivos en tu directorio local:Bashcd "C:\Users\Hp\Documents\SEMANA 12 PUS"
+Instalar las dependencias de desarrollo (PHPUnit):Bashcomposer install
+Regenerar y optimizar la auto-carga para mapear las nuevas clases introducidas:Bashcomposer dump-autoload
+Ejecución de las Pruebas UnitariasPara correr el motor de pruebas unitarias de manera global y comprobar los resultados de la suite completa, utiliza el siguiente comando:Bashvendor/bin/phpunit --testdox
+Resultado Esperado en Consola (35 Tests, 48 Aserciones)PlaintextPHPUnit 11.5.55 by Sebastian Bergmann and contributors.
 
 Runtime:       PHP 8.4.22
 Configuration: C:\Users\Hp\Documents\SEMANA 12 PUS\phpunit.xml
@@ -93,4 +73,30 @@ Reserva (Tests\Reserva)
  ✔ Fecha salida anterior
  ✔ Calcular total
 
-OK (12 tests, 22 assertions)
+Usuario (Tests\Usuario)
+ ✔ Get nombre
+ ✔ Get email
+ ✔ Get edad
+ ✔ Es mayor de edad con edad valida
+ ✔ Es mayor de edad con edad invalida
+ ✔ Es mayor de edad con edad cero
+ ✔ Usuario valido
+ ✔ Usuario invalido
+ ✔ Usuario es instancia
+ ✔ Usuario no es instancia de otra clase
+ ✔ Get nombre con assert same
+ ✔ Get edad con assert same
+ ✔ Assert same con tipos diferentes
+ ✔ Usuario no es null
+ ✔ Comparar objetos iguales
+ ✔ Comparar objetos diferentes
+ ✔ Comparar mismo objeto
+ ✔ Comparar objetos diferentes con assert same
+ ✔ Array contiene elemento
+ ✔ Array tiene tres elementos
+ ✔ Array esta vacio
+ ✔ Array no esta vacio
+ ✔ Get nombre con mensaje
+
+OK, but there were issues!
+Tests: 35, Assertions: 48, PHPUnit Deprecations: 1.
